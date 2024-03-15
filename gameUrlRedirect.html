@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Redirect</title>
+</head>
+<body>
+    <script>
+        // declare the variable
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        let targetUrlList = ["https://www.surveycake.com/s/Y7kPy", "https://www.surveycake.com/s/6L43O"]
+
+        let ans = getRandomInt(100)%2;
+        location.href = targetUrlList[ans];
+    </script>
+</body>
+</html>
